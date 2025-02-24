@@ -30,6 +30,13 @@
             margin: 20px 0;
         }
 
+        h4 {
+            font-weight: 300;
+            font-size: 20px;
+            margin: 20px 0;
+            margin-bottom: 0px;
+        }
+
         .container {
             background: rgba(0, 0, 0, 0.5);
             padding: 20px;
@@ -61,12 +68,21 @@
             margin: 50px 0;
         }
 
+        .gallery {
+            margin: 50px 0;
+            display: flex;
+            justify-content: center;
+            /* Center the images horizontally */
+            align-items: center;
+            /* Center the images vertically */
+        }
+
         .gallery img {
             width: 100%;
             max-width: 700px;
             height: auto;
             margin: 10px;
-            border: solid 1px rgba(255, 255, 255, 0.5)
+            border: solid 1px rgba(255, 255, 255, 0.5);
         }
 
         iframe {
@@ -119,7 +135,8 @@
             /* Vertically center the content */
             text-align: left;
             margin: 0 50px;
-            flex-wrap: wrap; /* Allow wrapping */
+            flex-wrap: wrap;
+            /* Allow wrapping */
         }
 
         .column {
@@ -153,6 +170,7 @@
         }
 
         @media (max-width: 850px) {
+
             .gallery img,
             .album-cover {
                 width: 100%;
@@ -165,16 +183,35 @@
             }
 
             .row {
-                flex-direction: column; /* Stack columns vertically on small screens */
-                margin: 0 10px; /* Reduce margin for smaller screens */
+                flex-direction: column;
+                /* Stack columns vertically on small screens */
+                margin: 0 10px;
+                /* Reduce margin for smaller screens */
                 margin-bottom: 30px;
             }
 
             .column {
-                flex: 0 0 100%; /* Make each column take full width */
-                margin-bottom: 10px; /* Add some space between rows */
-                text-align: center; /* Center text */
+                flex: 0 0 100%;
+                /* Make each column take full width */
+                margin-bottom: 10px;
+                /* Add some space between rows */
+                text-align: center;
+                /* Center text */
             }
+        }
+
+        .biography {
+            font-family: Roboto, sans-serif;
+            margin: 50px 0;
+            text-align: center;
+            color: white;
+            font-weight: 100;
+            /* Adjust the font weight */
+            font-size: 16px;
+            /* Adjust the font size */
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -185,8 +222,8 @@
 
         <div class="socials">
             <a href="http://facebook.com/freedominationband"><img src="static/facebook-icon.png" alt="Facebook"></a>
-            <a href="http://instagram.com/freedominationband"><img src="static/youtube-icon.png" alt="Youtube"></a>
-            <a href="http://youtube.com/freedominationband"><img src="static/instagram-icon.png" alt="Instagram"></a>
+            <a href="http://instagram.com/freedominationband"><img src="static/instagram-icon.png" alt="Instagram"></a>
+            <a href="http://youtube.com/freedominationband"><img src="static/youtube-icon.png" alt="Youtube"></a>
             <a href="http://tiktok.com/@freedominationband"><img src="static/tiktok-icon.png" alt="Tiktok"></a>
         </div>
 
@@ -230,18 +267,35 @@
                 <img src="static/bandphoto.JPG" alt="Band photo">
             </div>
 
-            <div class="contact">
-                <h2>Contact</h2>
-                <p>freedominationband@gmail.com</p>
-                <p>© 2025 Freedomination</p>
-                <div class="socials">
-                    <a href="http://facebook.com/freedominationband"><img src="static/facebook-icon.png" alt="Facebook"></a>
-                    <a href="http://instagram.com/freedominationband"><img src="static/youtube-icon.png" alt="Youtube"></a>
-                    <a href="http://youtube.com/freedominationband"><img src="static/instagram-icon.png" alt="Instagram"></a>
-                    <a href="http://tiktok.com/@freedominationband"><img src="static/tiktok-icon.png" alt="Tiktok"></a>
-                </div>
+            <div class="biography">
+                <h2>Biography</h2>
+                <p>Freedomination is a metal band from Vantaa, Finland, combining thrash, progressive, heavy metal,
+                    and punk rock influences into a powerful, contemporary sound. Gaining recognition in the
+                    Finnish metal scene, the band was featured in Inferno magazine and received acclaim for
+                    its self-published releases.</p>
+                <p>After a hiatus since 2017, they returned in 2022 with a renewed lineup and have now released their
+                    debut album, Until the Lights Go Out.</p>
+                Lineup
+                <br>Timo Ahlström – Vocals, guitar
+                <br>Jörgen Reinholm – Guitar
+                <br>Tommi Otsavaara – Bass, backing vocals
+                <br>Jukka Ahlström – Drums
             </div>
         </div>
+        <p>METAL</p>
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>freedominationband@gmail.com</p>
+            <p>© 2025 Freedomination</p>
+            <div class="socials">
+                <a href="http://facebook.com/freedominationband"><img src="static/facebook-icon.png" alt="Facebook"></a>
+                <a href="http://instagram.com/freedominationband"><img src="static/youtube-icon.png" alt="Youtube"></a>
+                <a href="http://youtube.com/freedominationband"><img src="static/instagram-icon.png"
+                        alt="Instagram"></a>
+                <a href="http://tiktok.com/@freedominationband"><img src="static/tiktok-icon.png" alt="Tiktok"></a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
