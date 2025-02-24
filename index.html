@@ -62,16 +62,17 @@
         }
 
         .gallery img {
-            width: 700px;
+            width: 100%;
+            max-width: 700px;
             height: auto;
             margin: 10px;
             border: solid 1px rgba(255, 255, 255, 0.5)
         }
 
         iframe {
-            width: 80%;
+            width: 100%;
             max-width: 600px;
-            height: 300px;
+            height: auto;
         }
 
         .btn {
@@ -105,9 +106,11 @@
         }
 
         .album-cover {
-            width: 700px;
+            width: 100%;
+            max-width: 700px;
             height: auto;
             margin-top: 10px;
+            border: solid 1px rgba(255, 255, 255, 0.5)
         }
 
         .row {
@@ -116,6 +119,7 @@
             /* Vertically center the content */
             text-align: left;
             margin: 0 50px;
+            flex-wrap: wrap; /* Allow wrapping */
         }
 
         .column {
@@ -126,11 +130,11 @@
         }
 
         .column:nth-child(1) {
-            flex: 0 0 20%;
+            flex: 0 0 15%;
         }
 
         .column:nth-child(2) {
-            flex: 0 0 60%;
+            flex: 0 0 55%;
         }
 
         .column:nth-child(3) {
@@ -138,7 +142,7 @@
         }
 
         .column:nth-child(4) {
-            flex: 0 0 10%;
+            flex: 0 0 15%;
         }
 
         /* Clear floats after the columns */
@@ -146,6 +150,31 @@
             content: "";
             display: table;
             clear: both;
+        }
+
+        @media (max-width: 850px) {
+            .gallery img,
+            .album-cover {
+                width: 100%;
+                height: auto;
+            }
+
+            iframe {
+                width: 100%;
+                height: auto;
+            }
+
+            .row {
+                flex-direction: column; /* Stack columns vertically on small screens */
+                margin: 0 10px; /* Reduce margin for smaller screens */
+                margin-bottom: 30px;
+            }
+
+            .column {
+                flex: 0 0 100%; /* Make each column take full width */
+                margin-bottom: 10px; /* Add some space between rows */
+                text-align: center; /* Center text */
+            }
         }
     </style>
 </head>
@@ -203,7 +232,7 @@
 
             <div class="contact">
                 <h2>Contact</h2>
-                <p>Email: freedominationband@gmail.com</p>
+                <p>freedominationband@gmail.com</p>
                 <p>© 2025 Freedomination</p>
                 <div class="socials">
                     <a href="http://facebook.com/freedominationband"><img src="static/facebook-icon.png" alt="Facebook"></a>
