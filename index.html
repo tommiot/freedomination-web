@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freedomination</title>
+
+    <meta property="og:title" content="Freedomination">
+    <meta property="og:description" content="Finnish Metal Band from Vantaa">
+    <meta property="og:image" content="https://www.freedomination.net/static/logo-square.jpg">
+    <meta property="og:url" content="https://www.freedomination.net">
+    <meta property="og:type" content="website">
+
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -63,9 +71,8 @@
         }
 
         .live-dates,
-        .gallery,
-        .contact {
-            margin: 50px 0;
+        .gallery, {
+            margin: 40px 0;
         }
 
         .gallery {
@@ -208,7 +215,7 @@
 
         .biography {
             font-family: Roboto, sans-serif;
-            margin: 50px 0;
+            margin: 20px 0;
             text-align: center;
             color: white;
             font-weight: 100;
@@ -218,6 +225,32 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .biography h2 {
+            font-family: Oswald, sans-serif;
+        }
+
+        .contact {
+            font-family: Roboto, sans-serif;
+            margin: 0 0 20px 0;
+            text-align: center;
+            color: white;
+            font-weight: 100;
+            font-size: 16px;
+        }
+
+        .contact h2 {
+            font-family: Oswald, sans-serif;
+            margin-top: 20px;
+        }
+
+        /* Change from p:last-child to target copyright text specifically */
+        .copyright {
+            font-family: Roboto, sans-serif;
+            margin: 20px 0;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
         }
     </style>
 </head>
@@ -248,14 +281,13 @@
             <h2>Upcoming Live Dates</h2>
             <div class="row">
                 <div class="column">
-                    7.3.2025
+                    12.07.2025
                 </div>
                 <div class="column">
-                    Club Ukkosmyrsky with Mutant Blast & Dreadsight</div>
-                <div class="column">Vantaa, FI</div>
+                    TBA</div>
+                <div class="column">Helsinki, FI</div>
                 <div class="column">
-                    <a href="https://www.tiketti.fi/club-ukkosmyrsky-ii-skenesali-vantaa-lippuja/106567" target="_blank"
-                        rel="noopener noreferrer" class="btn">Tickets</a>
+
                 </div>
             </div>
 
@@ -289,11 +321,9 @@
                 <br>Jukka Ahlström – Drums
             </div>
         </div>
-        <p>METAL</p>
         <div class="contact">
             <h2>Contact</h2>
             <p>freedominationband@gmail.com</p>
-            <p>© 2025 Freedomination</p>
             <div class="socials">
                 <a href="http://facebook.com/freedominationband" target="_blank" rel="noopener noreferrer"><img
                         src="static/facebook-icon.png" alt="Facebook"></a>
@@ -304,6 +334,8 @@
                 <a href="http://tiktok.com/@freedominationband" target="_blank" rel="noopener noreferrer"><img
                         src="static/tiktok-icon.png" alt="Tiktok"></a>
             </div>
+        <div class="copyright">
+            <p>© 2025 Freedomination</p>
         </div>
     </div>
 </body>
